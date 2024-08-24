@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixelscape - Image Search</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Pixelscape</h1>
+        <form>
+            <div class="search-container">
+                <input type="text" class="search-input" placeholder="Search for images...">
+                <button type="submit" class="search-btn">
+                    <span class="material-icons">search</span>
+                </button>
+            </div>
+        </form>
+    </header>
+
+    <main role="main">
+        <div class="filter-container">
+            <select id="sort-select">
+                <option value="relevant">Relevance</option>
+                <option value="latest">Latest</option>
+            </select>
+            <select id="color-select">
+                <option value="">Any Color</option>
+                <option value="black_and_white">Black & White</option>
+                <option value="red">Red</option>
+                <option value="orange">Orange</option>
+                <option value="yellow">Yellow</option>
+                <option value="green">Green</option>
+                <option value="blue">Blue</option>
+                <option value="purple">Purple</option>
+                <option value="pink">Pink</option>
+            </select>
+        </div>
+        <section>
+            <div class="images-container">
+                <h2>Enter a search term to find images</h2>
+            </div>
+            <button class="loadMoreBtn">Load More</button>
+        </section>
+    </main>
+
+    <div id="lightbox" class="lightbox">
+        <span class="close-btn">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+        <div id="lightbox-details"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
